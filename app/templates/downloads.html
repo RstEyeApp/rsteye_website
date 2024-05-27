@@ -1,21 +1,44 @@
 {% extends 'layout.html' %}
 
-{% block title %}downloads{% endblock %}
+{% block title %}Downloads{% endblock %}
 
 {% block content %}
-
-    <div class="container mt-5">
-        <h1>Download Links</h1>
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                Download for
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="{{ url_for('static', filename='downloads/rsteye.exe') }}" download>Windows</a></li>
-                <li><a class="dropdown-item" href="{{ url_for('static', filename='downloads/rsteye.deb') }}" download>Linux</a></li>
-                <li><a class="dropdown-item" href="{{ url_for('static', filename='downloads/rsteye.dmg') }}" download>Mac</a></li>
-            </ul>
+<div class="container mt-5">
+    <h1 class="mb-4">Download Links</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Windows</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Download the Windows installer for RstEyeApp.</p>
+                    <a href="{{ url_for('static', filename='downloads/rsteye.exe') }}" class="btn btn-primary" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">Linux</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Download the Linux package for RstEyeApp.</p>
+                    <a href="{{ url_for('static', filename='downloads/rsteye.deb') }}" class="btn btn-success" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">Mac</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Download the Mac installer for RstEyeApp.</p>
+                    <a href="{{ url_for('static', filename='downloads/rsteye.dmg') }}" class="btn btn-info" download>Download</a>
+                </div>
+            </div>
         </div>
     </div>
-
+</div>
 {% endblock %}
