@@ -25,7 +25,7 @@ To set up the development environment:
     To deploy the code on AWS EC2:
 
     1. SSH into the EC2 instance:
-        sudo ssh -i <file.pem> ec2-user@<public_ip>
+        sudo ssh -i <file.pem> ubuntu@<public_ip>
 
     2. Follow the development steps mentioned above, and then:
 
