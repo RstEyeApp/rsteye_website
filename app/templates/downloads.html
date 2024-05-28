@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">Download the Windows installer for RstEyeApp.</p>
-                    Comming soon ...
+                    <a href="{{ url_for('static', filename='downloads/RstEyeAppInstaller') }}" class="btn btn-primary" download>Download</a>
                 </div>
             </div>
         </div>
@@ -35,7 +35,18 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">Download the Mac installer for RstEyeApp.</p>
-                    <a href="{{ url_for('static', filename='downloads/rsteye.dmg') }}" class="btn btn-info" download>Download</a>
+                    Coming soon ...
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header bg-warning text-white">
+                    <h5 class="mb-0">Build on Your Own</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">For engineers and developers, you can build RstEyeApp for your own OS by following the instructions in our GitHub repository.</p>
+                    <a href="https://github.com/RstEyeApp/rsteye/blob/main/README.md" class="btn btn-warning" target="_blank">Build Instructions</a>
                 </div>
             </div>
         </div>

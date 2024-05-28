@@ -4,12 +4,13 @@
 
 {% block content %}
 <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 20px;">
-    <h2>About Prince Roshan</h2>
+    <h2>About The Author</h2>
+    <img src="{{ url_for('static', filename='rsteye_autor.jpg') }}" alt="Prince Roshan" style="width: 150px; height: 150px; border-radius: 50%; margin: 20px auto;">
     <p style="font-size: 18px; line-height: 1.6; margin: 20px 0;">
-        Hello! I'm Prince Roshan, a computer engineer passionate about engineering. I have developed this software to promote digital breaks and enhance productivity. I believe in the importance of taking regular breaks to maintain mental and physical well-being, especially while working with computers.
+        Hello! I'm Prince Roshan, a computer engineer passionate about enhancing productivity through digital wellness. I created RstEyeApp to help people take regular breaks and maintain their mental and physical well-being while working on computers.
     </p>
     <p style="font-size: 18px; line-height: 1.6; margin: 20px 0;">
-        You can reach out to me for any inquiries or feedback at:
+        Feel free to reach out to me at:
     </p>
     <ul style="list-style-type: none; padding: 0;">
         <li style="font-size: 18px; margin: 10px 0;">
@@ -18,6 +19,14 @@
         <li style="font-size: 18px; margin: 10px 0;">
             <strong>Discord:</strong> @agent_hellboy
         </li>
+        <li style="font-size: 18px; margin: 10px 0;">
+            <strong>Twitter:</strong> <a href="https://twitter.com/_agent_hellboy" target="_blank">@_agent_hellboy</a>
+        </li>
     </ul>
+    <h2>Development</h2>
+    <p style="font-size: 18px; line-height: 1.6; margin: 20px 0;">
+        RstEyeApp is an open-source project, and anyone can help enhance it. Interested in contributing? Visit our GitHub organization to get involved:
+    </p>
+    <a href="https://github.com/RstEyeApp" target="_blank" style="font-size: 18px; color: #007bff; text-decoration: underline;">https://github.com/RstEyeApp</a>
 </div>
 {% endblock %}
